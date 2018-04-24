@@ -1,4 +1,5 @@
 # DvrConf.txt
+<pre><code>
 ================================
 	DVR Config TXT [Ver 0.01]
 ================================
@@ -8,6 +9,8 @@
 [RESOL]:0x4
 [MAC]:00:16:6C:F1:8F:06
 ================================
+</code></pre>
+
 
 # sysconf - bootloader
 DVR ip adress : 192.168.75.194
@@ -49,11 +52,15 @@ person {
 ## Compiling dependent packages of protocol buffers 
 
 <pre><code>
-dm8:~/update_dvr_conf/pb_test$ pkg-config --cflags protobuf
+$ pkg-config --cflags protobuf
 -pthread -I/usr/local/include
-dm8:~/update_dvr_conf/pb_test$ pkg-config --libs protobuf
+</code></pre>
+<pre><code>
+$ pkg-config --libs protobuf
 -L/usr/local/lib -lprotobuf -pthread -lpthread
-dm8:~/update_dvr_conf/pb_test$ pkg-config --cflags protobuf
+</code></pre>
+<pre><code>
+$ pkg-config --cflags protobuf
 -pthread -I/usr/local/include
 dm8:~/update_dvr_conf/pb_test$ pkg-config --cflags --libs protobuf
 -pthread -I/usr/local/include -L/usr/local/lib -lprotobuf -pthread -lpthread
