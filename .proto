@@ -1,0 +1,27 @@
+message DvrConfiguration {
+	optional int model_id = 1;
+	optional int board_id = 2;
+
+	enum Locale {
+	LOCALE_WORLDWIDE = 0;
+	LOCALE_CHINA = 1;
+	LOCALE_KOREA = 2;
+	LOCALE_S1_KOREA = 3;
+	LOCALE_JAPAN = 4;
+	LOCALE_TB_EYE = 5;
+	LOCALE_TWOWINSCOM = ;
+	}
+
+	optional Locale locale = 3 [default = LOCALE_WORLDWIDE];
+
+	enum CameraEncodeType{
+		CAMERA_NTSC = 0;
+		CAMERA_PAL = 1;
+	}
+
+	optional CameraEncodeType type = 4 [default = CAMERA_NTSC];
+
+	optional string mac = 5;
+}
+
+
